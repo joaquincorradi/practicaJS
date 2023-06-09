@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Tienda de zapatillas</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/interaccion.css" />
+    <link rel="stylesheet" href="assets/typography/typography.css" />
+    <script src="assets/scripts/scripts.js"></script>
+  </head>
+  <body>
+    <header>
+      <h1 id="titulo">Tienda de zapatillas</h1>
+      <a id="interaccion" href="index.html">Volver</a>
+    </header>
+
+    <article>
+      <h2 id="comprar">Comprar</h2>
+    </article>
+
+    <section>
+      <form class="formulario">
+        <label for="nombre">Nombre: </label>
+        <input
+          id="nombre"
+          type="text"
+          name="nombre"
+          placeholder="Joaquin"
+          class="nombre"
+          required
+        />
+        <br />
+
+        <label for="apellido">Apelido: </label>
+        <input
+          id="apellido"
+          type="text"
+          name="apellido"
+          placeholder="Corradi"
+          class="apellido"
+          required
+        />
+        <br />
+
+        <label for="marca">Marca:</label>
+        <select id="marca" name="marca" class="marca" required>
+          <option selected disabled>Seleccione una opcion</option>
+          <option value="nike">Nike ($400)</option>
+          <option value="adidas">Adidas ($300)</option>
+          <option value="puma">Puma($200)</option>
+        </select>
+        <br />
+
+        <label for="talle">Talle:</label>
+        <input type="checkbox" id="talle-40" name="talle" />
+        <label for="talle-40">40 (+$10)</label>
+        <input type="checkbox" id="talle-41" name="talle" />
+        <label for="talle-41">41 (+$20)</label>
+        <input type="checkbox" id="talle-42" name="talle" />
+        <label for="talle-42">42 (+$30)</label>
+      </form>
+
+      <button id="calc-precio" onclick="calcPrecio()">Calcular precio</button>
+      <button id="borrar" onclick="borrar()">Borrar</button>
+    </section>
+
+    <section id="resultado">
+      <p>Su precio aparecera aqui</p>
+    </section>
+  </body>
+</html>

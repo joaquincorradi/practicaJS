@@ -1,0 +1,48 @@
+#comprar {
+  text-align: center;
+  margin: 3rem;
+}
+
+.formulario {
+  padding: 1rem;
+  text-align: center;
+}
+
+.nombre {
+  margin-left: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.apellido {
+  margin-left: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.marca {
+  margin-left: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+#calc-precio {
+  margin: 0 auto;
+  background-color: lightslategrey;
+  color: white;
+  padding: 0.9rem 2rem;
+  border-radius: 0.5rem;
+}
+
+#borrar {
+  margin: 0 auto;
+  background-color: lightslategrey;
+  color: white;
+  padding: 0.9rem 2rem;
+  border-radius: 0.5rem;
+}
+
+#resultado {
+  text-align: center;
+  margin: 1rem;
+  border: solid 0.125rem grey;
+  border-radius: 0.3rem;
+  padding: 1.5rem;
+}
